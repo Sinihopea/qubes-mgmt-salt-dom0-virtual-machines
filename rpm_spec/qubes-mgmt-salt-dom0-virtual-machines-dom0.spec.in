@@ -1,21 +1,21 @@
 
-Name:      qubes-mgmt-salt-dom0-virtual-machines
-Version:   @VERSION@
-Release:   1%{?dist}
-Summary:   Downloads, installs and configures template as well as creating and configuring virtual-machine AppVM's.
-License:   GPL 2.0
-URL:	   http://www.qubes-os.org/
+Name:       qubes-mgmt-salt-dom0-virtual-machines
+Version:    @VERSION@
+Release:    1%{?dist}
+Summary:    Downloads, installs and configures template as well as creating and configuring virtual-machine AppVM's.
+License:    GPL 2.0
+URL:        http://www.qubes-os.org/
 
-Group:     System administration tools
-BuildArch: noarch
-Requires:  qubes-mgmt-salt
-Requires:  qubes-mgmt-salt-dom0
-Requires:  qubes-core-admin-addon-whonix
-# do not require qubes-core-dom0 directly, but if installed, make sure it's the
+Group:      System administration tools
+BuildArch:  noarch
+Requires:   qubes-mgmt-salt
+Requires:   qubes-mgmt-salt-dom0
+Requires:   qubes-core-admin-addon-whonix
+# Do not require qubes-core-dom0 directly, but if installed, make sure it's the
 # right version
-Conflicts: qubes-core-dom0 < 4.0.35
+Conflicts:  qubes-core-dom0 < 4.0.35
 
-Source0: %{name}-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 
 %description
 Downloads, installs and configures template as well as creating and configuring virtual-machine AppVM's.
